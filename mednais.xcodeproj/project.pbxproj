@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C657A1852B7149C1002FEED2 /* mednaisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1842B7149C1002FEED2 /* mednaisApp.swift */; };
+		C657A1872B7149C1002FEED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1862B7149C1002FEED2 /* ContentView.swift */; };
+		C657A1892B7149C4002FEED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A1882B7149C4002FEED2 /* Assets.xcassets */; };
+		C657A18C2B7149C4002FEED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A18B2B7149C4002FEED2 /* Preview Assets.xcassets */; };
+		C657A1922B7149C4002FEED2 /* mednais Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C657A1912B7149C4002FEED2 /* mednais Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C657A1972B7149C4002FEED2 /* mednaisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1962B7149C4002FEED2 /* mednaisApp.swift */; };
+		C657A1992B7149C4002FEED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1982B7149C4002FEED2 /* ContentView.swift */; };
+		C657A19B2B7149C5002FEED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A19A2B7149C5002FEED2 /* Assets.xcassets */; };
+		C657A19E2B7149C5002FEED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C657A1932B7149C4002FEED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C657A1792B7149C1002FEED2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C657A1902B7149C4002FEED2;
+			remoteInfo = "mednais Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C657A1A42B7149C5002FEED2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C657A1922B7149C4002FEED2 /* mednais Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C657A1812B7149C1002FEED2 /* mednais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mednais.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C657A1842B7149C1002FEED2 /* mednaisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mednaisApp.swift; sourceTree = "<group>"; };
+		C657A1862B7149C1002FEED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C657A1882B7149C4002FEED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C657A18B2B7149C4002FEED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C657A1912B7149C4002FEED2 /* mednais Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mednais Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C657A1962B7149C4002FEED2 /* mednaisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mednaisApp.swift; sourceTree = "<group>"; };
+		C657A1982B7149C4002FEED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C657A19A2B7149C5002FEED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C657A17E2B7149C1002FEED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C657A18E2B7149C4002FEED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C657A1782B7149C1002FEED2 = {
+			isa = PBXGroup;
+			children = (
+				C657A1832B7149C1002FEED2 /* mednais */,
+				C657A1952B7149C4002FEED2 /* mednais Watch App */,
+				C657A1822B7149C1002FEED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C657A1822B7149C1002FEED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C657A1812B7149C1002FEED2 /* mednais.app */,
+				C657A1912B7149C4002FEED2 /* mednais Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C657A1832B7149C1002FEED2 /* mednais */ = {
+			isa = PBXGroup;
+			children = (
+				C657A1842B7149C1002FEED2 /* mednaisApp.swift */,
+				C657A1862B7149C1002FEED2 /* ContentView.swift */,
+				C657A1882B7149C4002FEED2 /* Assets.xcassets */,
+				C657A18A2B7149C4002FEED2 /* Preview Content */,
+			);
+			path = mednais;
+			sourceTree = "<group>";
+		};
+		C657A18A2B7149C4002FEED2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C657A18B2B7149C4002FEED2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C657A1952B7149C4002FEED2 /* mednais Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C657A1962B7149C4002FEED2 /* mednaisApp.swift */,
+				C657A1982B7149C4002FEED2 /* ContentView.swift */,
+				C657A19A2B7149C5002FEED2 /* Assets.xcassets */,
+				C657A19C2B7149C5002FEED2 /* Preview Content */,
+			);
+			path = "mednais Watch App";
+			sourceTree = "<group>";
+		};
+		C657A19C2B7149C5002FEED2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C657A1802B7149C1002FEED2 /* mednais */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C657A1A52B7149C5002FEED2 /* Build configuration list for PBXNativeTarget "mednais" */;
+			buildPhases = (
+				C657A17D2B7149C1002FEED2 /* Sources */,
+				C657A17E2B7149C1002FEED2 /* Frameworks */,
+				C657A17F2B7149C1002FEED2 /* Resources */,
+				C657A1A42B7149C5002FEED2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C657A1942B7149C4002FEED2 /* PBXTargetDependency */,
+			);
+			name = mednais;
+			productName = mednais;
+			productReference = C657A1812B7149C1002FEED2 /* mednais.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C657A1902B7149C4002FEED2 /* mednais Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C657A1A12B7149C5002FEED2 /* Build configuration list for PBXNativeTarget "mednais Watch App" */;
+			buildPhases = (
+				C657A18D2B7149C4002FEED2 /* Sources */,
+				C657A18E2B7149C4002FEED2 /* Frameworks */,
+				C657A18F2B7149C4002FEED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mednais Watch App";
+			productName = "mednais Watch App";
+			productReference = C657A1912B7149C4002FEED2 /* mednais Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C657A1792B7149C1002FEED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C657A1802B7149C1002FEED2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C657A1902B7149C4002FEED2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C657A17C2B7149C1002FEED2 /* Build configuration list for PBXProject "mednais" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C657A1782B7149C1002FEED2;
+			productRefGroup = C657A1822B7149C1002FEED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C657A1802B7149C1002FEED2 /* mednais */,
+				C657A1902B7149C4002FEED2 /* mednais Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C657A17F2B7149C1002FEED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C657A18C2B7149C4002FEED2 /* Preview Assets.xcassets in Resources */,
+				C657A1892B7149C4002FEED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C657A18F2B7149C4002FEED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C657A19E2B7149C5002FEED2 /* Preview Assets.xcassets in Resources */,
+				C657A19B2B7149C5002FEED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C657A17D2B7149C1002FEED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C657A1872B7149C1002FEED2 /* ContentView.swift in Sources */,
+				C657A1852B7149C1002FEED2 /* mednaisApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C657A18D2B7149C4002FEED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C657A1992B7149C4002FEED2 /* ContentView.swift in Sources */,
+				C657A1972B7149C4002FEED2 /* mednaisApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C657A1942B7149C4002FEED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C657A1902B7149C4002FEED2 /* mednais Watch App */;
+			targetProxy = C657A1932B7149C4002FEED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C657A19F2B7149C5002FEED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C657A1A02B7149C5002FEED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C657A1A22B7149C5002FEED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mednais Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 3TCFF3G73W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = mednais;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.mednais;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mednais.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		C657A1A32B7149C5002FEED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mednais Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 3TCFF3G73W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = mednais;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.mednais;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mednais.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		C657A1A62B7149C5002FEED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mednais/Preview Content\"";
+				DEVELOPMENT_TEAM = 3TCFF3G73W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = mednais;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mednais;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C657A1A72B7149C5002FEED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mednais/Preview Content\"";
+				DEVELOPMENT_TEAM = 3TCFF3G73W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = mednais;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mednais;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C657A17C2B7149C1002FEED2 /* Build configuration list for PBXProject "mednais" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C657A19F2B7149C5002FEED2 /* Debug */,
+				C657A1A02B7149C5002FEED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C657A1A12B7149C5002FEED2 /* Build configuration list for PBXNativeTarget "mednais Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C657A1A22B7149C5002FEED2 /* Debug */,
+				C657A1A32B7149C5002FEED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C657A1A52B7149C5002FEED2 /* Build configuration list for PBXNativeTarget "mednais" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C657A1A62B7149C5002FEED2 /* Debug */,
+				C657A1A72B7149C5002FEED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C657A1792B7149C1002FEED2 /* Project object */;
+}
