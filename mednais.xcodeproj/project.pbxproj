@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C636A7182B74212E008FDB3A /* PreSamplingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636A7172B74212E008FDB3A /* PreSamplingView.swift */; };
+		C636A71A2B7429A9008FDB3A /* PatientIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636A7192B7429A9008FDB3A /* PatientIDView.swift */; };
+		C636A71C2B7429D4008FDB3A /* FastingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636A71B2B7429D4008FDB3A /* FastingView.swift */; };
+		C636A71E2B742A44008FDB3A /* AlcoholFreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636A71D2B742A44008FDB3A /* AlcoholFreeView.swift */; };
+		C636A7202B742A80008FDB3A /* PhysicalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636A71F2B742A80008FDB3A /* PhysicalActivityView.swift */; };
 		C657A1852B7149C1002FEED2 /* mednaisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1842B7149C1002FEED2 /* mednaisApp.swift */; };
 		C657A1872B7149C1002FEED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1862B7149C1002FEED2 /* ContentView.swift */; };
 		C657A1892B7149C4002FEED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A1882B7149C4002FEED2 /* Assets.xcassets */; };
@@ -16,6 +21,9 @@
 		C657A1992B7149C4002FEED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1982B7149C4002FEED2 /* ContentView.swift */; };
 		C657A19B2B7149C5002FEED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A19A2B7149C5002FEED2 /* Assets.xcassets */; };
 		C657A19E2B7149C5002FEED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */; };
+		C6CD76452BADABD00011C01D /* ObtainSupplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CD76442BADABD00011C01D /* ObtainSupplies.swift */; };
+		C6EEEDF52BB0A8D700EBD59A /* PunctureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */; };
+		C6EEEDF72BB0AE6100EBD59A /* TourniquetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C636A7172B74212E008FDB3A /* PreSamplingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSamplingView.swift; sourceTree = "<group>"; };
+		C636A7192B7429A9008FDB3A /* PatientIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientIDView.swift; sourceTree = "<group>"; };
+		C636A71B2B7429D4008FDB3A /* FastingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingView.swift; sourceTree = "<group>"; };
+		C636A71D2B742A44008FDB3A /* AlcoholFreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholFreeView.swift; sourceTree = "<group>"; };
+		C636A71F2B742A80008FDB3A /* PhysicalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityView.swift; sourceTree = "<group>"; };
 		C657A1812B7149C1002FEED2 /* mednais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mednais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C657A1842B7149C1002FEED2 /* mednaisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mednaisApp.swift; sourceTree = "<group>"; };
 		C657A1862B7149C1002FEED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +66,9 @@
 		C657A1982B7149C4002FEED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C657A19A2B7149C5002FEED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6CD76442BADABD00011C01D /* ObtainSupplies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainSupplies.swift; sourceTree = "<group>"; };
+		C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureView.swift; sourceTree = "<group>"; };
+		C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourniquetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +131,14 @@
 			children = (
 				C657A1962B7149C4002FEED2 /* mednaisApp.swift */,
 				C657A1982B7149C4002FEED2 /* ContentView.swift */,
+				C636A7172B74212E008FDB3A /* PreSamplingView.swift */,
+				C636A7192B7429A9008FDB3A /* PatientIDView.swift */,
+				C636A71B2B7429D4008FDB3A /* FastingView.swift */,
+				C636A71D2B742A44008FDB3A /* AlcoholFreeView.swift */,
+				C636A71F2B742A80008FDB3A /* PhysicalActivityView.swift */,
+				C6CD76442BADABD00011C01D /* ObtainSupplies.swift */,
+				C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */,
+				C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */,
 				C657A19A2B7149C5002FEED2 /* Assets.xcassets */,
 				C657A19C2B7149C5002FEED2 /* Preview Content */,
 			);
@@ -240,8 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C636A7202B742A80008FDB3A /* PhysicalActivityView.swift in Sources */,
+				C6CD76452BADABD00011C01D /* ObtainSupplies.swift in Sources */,
+				C6EEEDF52BB0A8D700EBD59A /* PunctureView.swift in Sources */,
+				C636A71C2B7429D4008FDB3A /* FastingView.swift in Sources */,
+				C6EEEDF72BB0AE6100EBD59A /* TourniquetView.swift in Sources */,
+				C636A7182B74212E008FDB3A /* PreSamplingView.swift in Sources */,
 				C657A1992B7149C4002FEED2 /* ContentView.swift in Sources */,
+				C636A71E2B742A44008FDB3A /* AlcoholFreeView.swift in Sources */,
 				C657A1972B7149C4002FEED2 /* mednaisApp.swift in Sources */,
+				C636A71A2B7429A9008FDB3A /* PatientIDView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
