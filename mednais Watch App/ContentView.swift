@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack {
+                VStack(spacing: 12) {
                     titleView
                     iconView
                     modeView

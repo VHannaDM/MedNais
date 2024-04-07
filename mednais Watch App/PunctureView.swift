@@ -8,37 +8,41 @@
 import SwiftUI
 
 struct PunctureView: View {
-    @State private var isPresented: Bool = false
+    @State private var showTourniquet: Bool = false
     
     var body: some View {
-        VStack {
-            Text("PUNCTURE")
-                .bold()
-            Text("Put on the gloves")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("Apply the\ntourniquet")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("Clean the site")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("Puncture (bevel\nup, 5-30 degree\nangle")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            NavigationStack {
-                Button(action: {
-                    isPresented = true
-                }) {
-                    Text("START")
-                }
-                .background(Color.red)
-                .cornerRadius(10)
-                .navigationDestination(isPresented: $isPresented) {
-                    Text("Details screen")
-                }
+        ScrollView{
+            VStack(spacing: 12) {
+                titleView
+                instructionsView
+                startButton
+            }
+            .navigationDestination(isPresented: $showTourniquet) {
+                TourniquetView()
             }
         }
+    }
+    
+    var titleView: some View {
+        Text("PUNCTURE")
+            .bold()
+            .multilineTextAlignment(.center)
+    }
+    
+    var instructionsView: some View {
+        Text("Put on the gloves\n\nApply the\ntourniquet\n\nClean the site\n\nPuncture (bevel\nup, 5-30 degree\nangle")
+            .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+            .multilineTextAlignment(.center)
+    }
+    
+    var startButton: some View {
+        Button {
+            showTourniquet = true
+        } label: {
+            Text("START")
+        }
+        .background(Color.red)
+        .cornerRadius(10)
     }
 }
 

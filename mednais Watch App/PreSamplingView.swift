@@ -52,7 +52,6 @@ struct PreSamplingView: View {
         }
         .background(Color.red)
         .cornerRadius(10)
-
     }
 }
 

@@ -8,28 +8,61 @@
 import SwiftUI
 
 struct AlcoholFreeView: View {
-    @State private var isPresented: Bool = false
+    @State private var showPhysicalActivity: Bool = false
     
     var body: some View {
-        VStack {
-            Text("ALCOHOL FREE")
-                .bold()
-            Text("alcohol free\nfor 24h")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            NavigationStack {
-                Button(action: {
-                    isPresented = true
-                }) {
-                    Text("Confirm")
-                }
-                .background(Color.red)
-                .cornerRadius(10)
-                .navigationDestination(isPresented: $isPresented) {
-                    Text("Details screen")
-                }
+        ScrollView {
+            VStack(spacing: 12) {
+                titleView
+                iconView
+                alcoholInformation
+                confirmButton
+                rejectButton
             }
         }
+        .navigationDestination(isPresented: $showPhysicalActivity) {
+            PhysicalActivityView()
+        }
+    }
+    
+    var titleView: some View {
+        Text("ALCOHOL FREE")
+            .bold()
+    }
+    
+    var iconView: some View {
+        ZStack {
+            Circle()
+                .frame(width: 75, height: 75)
+            Text("ALC")
+                .foregroundColor(.black)
+        }
+    }
+    
+    var alcoholInformation: some View {
+        Text("alcohol free for 24 h")
+            .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+            .multilineTextAlignment(.center)
+    }
+    
+    var confirmButton: some View {
+        Button {
+            showPhysicalActivity = true
+        } label: {
+            Text("Confirm")
+        }
+        .background(Color.red)
+        .cornerRadius(10)
+    }
+    
+    var rejectButton: some View {
+        Button {
+            showPhysicalActivity = true
+        } label: {
+            Text("Reject")
+        }
+        .background(Color.gray)
+        .cornerRadius(10)
     }
 }
 

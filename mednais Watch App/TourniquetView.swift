@@ -6,39 +6,87 @@
 //
 
 import SwiftUI
+import Combine
 
 struct TourniquetView: View {
-    @State private var isPresented: Bool = false
+    @State private var showFinishingPuncture: Bool = false
+    @State private var timeRemaining = 60
+    @State private var timer = Timer.publish(every: 1, on: .main, in: .common)
+    
+    @State private var cancellable: Cancellable?
     
     var body: some View {
-        VStack {
-            Text("TOURNIQUET")
-                .bold()
-            Text("Ensure tourniquet\nis applied less\nthan 1 min")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("Apply the\ntourniquet")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("Clean the site")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("Puncture (bevel\nup, 5-30 degree\nangle")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            NavigationStack {
-                Button(action: {
-                    isPresented = true
-                }) {
-                    Text("START")
+        ScrollView {
+            VStack(spacing: 12) {
+                titleView
+                timeOfEnsureTourniquet
+                HStack(spacing: 24) {
+                    Text("0:\(timeRemaining)")
+                    startTimerButton
                 }
-                .background(Color.red)
-                .cornerRadius(10)
-                .navigationDestination(isPresented: $isPresented) {
-                    Text("Details screen")
-                }
+                instructionsView
+                nextButton
+            }
+            .navigationDestination(isPresented: $showFinishingPuncture) {
+                FinishingPunctureView()
             }
         }
+        .onReceive(timer) {_ in
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            }
+        }
+    }
+    
+    var titleView: some View {
+        Text("TOURNIQUET")
+            .bold()
+            .multilineTextAlignment(.center)
+    }
+    
+    var timeOfEnsureTourniquet: some View {
+        Text("Ensure tourniquet\nis applied less\nthan 1 min")
+            .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+            .multilineTextAlignment(.center)
+    }
+    
+    
+    
+    var instructionsView: some View {
+        Text("Release tourniquet\nafter first tube\n\nMix tubes 1 time")
+            .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+            .multilineTextAlignment(.center)
+    }
+    
+    var nextButton: some View {
+        Button {
+            showFinishingPuncture = true
+        } label: {
+            Text("NEXT")
+        }
+        .background(Color.red)
+        .cornerRadius(10)
+    }
+    
+    var startTimerButton: some View {
+        Button {
+            if cancellable == nil {
+                cancellable = timer.connect()
+            } else {
+                cancellable?.cancel()
+                timer = Timer.publish(every: 1, on: .main, in: .common)
+                cancellable = nil
+            }
+        } label: {
+            Image("timer")
+                .resizable()
+                .renderingMode(.template)
+                .frame(width: 32, height: 32)
+                .foregroundStyle(.white)
+                .tint(.white)
+        }
+        .fixedSize()
+        .buttonStyle(PlainButtonStyle())
     }
 }
 

@@ -8,33 +8,64 @@
 import SwiftUI
 
 struct FastingView: View {
-    @State private var isPresented: Bool = false
+    @State private var showAlcoholFree: Bool = false
     
     var body: some View {
-        VStack {
-            Text("FASTING")
-                .bold()
-            Text("What is your\nname")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("What is your date\nof birth?")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            NavigationStack {
-                Button(action: {
-                    isPresented = true
-                }) {
-                    Text("NEXT")
-                }
-                .background(Color.red)
-                .cornerRadius(10)
-                .navigationDestination(isPresented: $isPresented) {
-                    Text("Details screen")
-                }
+        ScrollView {
+            VStack(spacing: 12) {
+                titleView
+                iconView
+                fastingInformation
+                confirmButton
+                rejectButton
             }
         }
+        .navigationDestination(isPresented: $showAlcoholFree) {
+            AlcoholFreeView()
+        }
+    }
+    
+    var titleView: some View {
+        Text("FASTING")
+            .bold()
+    }
+    
+    var iconView: some View {
+        ZStack {
+            Circle()
+                .frame(width: 75, height: 75)
+            Text("FOOD")
+                .foregroundColor(.black)
+        }
+    }
+    
+    var fastingInformation: some View {
+        Text("fasting state, 12 h after the last meal")
+            .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+            .multilineTextAlignment(.center)
+    }
+    
+    var confirmButton: some View {
+        Button {
+            showAlcoholFree = true
+        } label: {
+            Text("Confirm")
+        }
+        .background(Color.red)
+        .cornerRadius(10)
+    }
+    
+    var rejectButton: some View {
+        Button {
+            showAlcoholFree = true
+        } label: {
+            Text("Reject")
+        }
+        .background(Color.gray)
+        .cornerRadius(10)
     }
 }
+
 
 struct FastingView_Previews: PreviewProvider {
     static var previews: some View {

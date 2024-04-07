@@ -8,31 +8,48 @@
 import SwiftUI
 
 struct PatientIDView: View {
-    @State private var isPresented: Bool = false
+    @State private var showFasting: Bool = false
     
     var body: some View {
-        VStack {
-            Text("PATIENT ID")
-                .bold()
-            Text("What is your\nname")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            Text("What is your date\nof birth?")
-                .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
-                .multilineTextAlignment(.center)
-            NavigationStack {
-                Button(action: {
-                    isPresented = true
-                }) {
-                    Text("NEXT")
-                }
-                .background(Color.red)
-                .cornerRadius(10)
-                .navigationDestination(isPresented: $isPresented) {
-                    Text("Details screen")
-                }
+        ScrollView {
+            VStack(spacing: 12) {
+                titleView
+                iconView
+                infoOfPatient
+                nextButton
             }
         }
+        .navigationDestination(isPresented: $showFasting) {
+            FastingView()
+        }
+    }
+    
+    
+    var titleView: some View {
+        Text("PATIENT ID")
+            .bold()
+    }
+    
+    var iconView: some View {
+        Image(systemName: "person.crop.circle.fill")
+            .resizable()
+            .frame(width: 50, height: 50)
+    }
+    
+    var infoOfPatient: some View {
+        Text("What is your name?\nWhat is your date of birth?")
+            .foregroundColor(Color(red: 0.5, green: 0.5, blue: 0.5))
+            .multilineTextAlignment(.center)
+    }
+    
+    var nextButton: some View {
+        Button {
+            showFasting = true
+        } label: {
+            Text("NEXT")
+        }
+        .background(Color.red)
+        .cornerRadius(10)
     }
 }
 
