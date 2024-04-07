@@ -18,10 +18,10 @@
 		C657A18C2B7149C4002FEED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A18B2B7149C4002FEED2 /* Preview Assets.xcassets */; };
 		C657A1922B7149C4002FEED2 /* mednais Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C657A1912B7149C4002FEED2 /* mednais Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C657A1972B7149C4002FEED2 /* mednaisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1962B7149C4002FEED2 /* mednaisApp.swift */; };
-		C657A1992B7149C4002FEED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1982B7149C4002FEED2 /* ContentView.swift */; };
+		C657A1992B7149C4002FEED2 /* SelectModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657A1982B7149C4002FEED2 /* SelectModeView.swift */; };
 		C657A19B2B7149C5002FEED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A19A2B7149C5002FEED2 /* Assets.xcassets */; };
 		C657A19E2B7149C5002FEED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */; };
-		C6CD76452BADABD00011C01D /* ObtainSupplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CD76442BADABD00011C01D /* ObtainSupplies.swift */; };
+		C6CD76452BADABD00011C01D /* ObtainSuppliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CD76442BADABD00011C01D /* ObtainSuppliesView.swift */; };
 		C6EEEDF52BB0A8D700EBD59A /* PunctureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */; };
 		C6EEEDF72BB0AE6100EBD59A /* TourniquetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */; };
 		C6FBD9242BB9DA1500BD73E5 /* FinishingPunctureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBD9232BB9DA1500BD73E5 /* FinishingPunctureView.swift */; };
@@ -67,10 +67,10 @@
 		C657A18B2B7149C4002FEED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C657A1912B7149C4002FEED2 /* mednais Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mednais Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C657A1962B7149C4002FEED2 /* mednaisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mednaisApp.swift; sourceTree = "<group>"; };
-		C657A1982B7149C4002FEED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C657A1982B7149C4002FEED2 /* SelectModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModeView.swift; sourceTree = "<group>"; };
 		C657A19A2B7149C5002FEED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C657A19D2B7149C5002FEED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C6CD76442BADABD00011C01D /* ObtainSupplies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainSupplies.swift; sourceTree = "<group>"; };
+		C6CD76442BADABD00011C01D /* ObtainSuppliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainSuppliesView.swift; sourceTree = "<group>"; };
 		C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureView.swift; sourceTree = "<group>"; };
 		C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourniquetView.swift; sourceTree = "<group>"; };
 		C6FBD9232BB9DA1500BD73E5 /* FinishingPunctureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishingPunctureView.swift; sourceTree = "<group>"; };
@@ -138,13 +138,13 @@
 			isa = PBXGroup;
 			children = (
 				C657A1962B7149C4002FEED2 /* mednaisApp.swift */,
-				C657A1982B7149C4002FEED2 /* ContentView.swift */,
+				C657A1982B7149C4002FEED2 /* SelectModeView.swift */,
 				C636A7172B74212E008FDB3A /* PreSamplingView.swift */,
 				C636A7192B7429A9008FDB3A /* PatientIDView.swift */,
 				C636A71B2B7429D4008FDB3A /* FastingView.swift */,
 				C636A71D2B742A44008FDB3A /* AlcoholFreeView.swift */,
 				C636A71F2B742A80008FDB3A /* PhysicalActivityView.swift */,
-				C6CD76442BADABD00011C01D /* ObtainSupplies.swift */,
+				C6CD76442BADABD00011C01D /* ObtainSuppliesView.swift */,
 				C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */,
 				C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */,
 				C6FBD9232BB9DA1500BD73E5 /* FinishingPunctureView.swift */,
@@ -278,13 +278,13 @@
 			files = (
 				C636A7202B742A80008FDB3A /* PhysicalActivityView.swift in Sources */,
 				C6FBD9242BB9DA1500BD73E5 /* FinishingPunctureView.swift in Sources */,
-				C6CD76452BADABD00011C01D /* ObtainSupplies.swift in Sources */,
+				C6CD76452BADABD00011C01D /* ObtainSuppliesView.swift in Sources */,
 				C6EEEDF52BB0A8D700EBD59A /* PunctureView.swift in Sources */,
 				C636A71C2B7429D4008FDB3A /* FastingView.swift in Sources */,
 				C6EEEDF72BB0AE6100EBD59A /* TourniquetView.swift in Sources */,
 				C6FBD9282BBAB7F500BD73E5 /* ParametersView.swift in Sources */,
 				C636A7182B74212E008FDB3A /* PreSamplingView.swift in Sources */,
-				C657A1992B7149C4002FEED2 /* ContentView.swift in Sources */,
+				C657A1992B7149C4002FEED2 /* SelectModeView.swift in Sources */,
 				C636A71E2B742A44008FDB3A /* AlcoholFreeView.swift in Sources */,
 				C6FBD9262BB9DEDD00BD73E5 /* PostSamplingView.swift in Sources */,
 				C657A1972B7149C4002FEED2 /* mednaisApp.swift in Sources */,

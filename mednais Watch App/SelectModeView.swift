@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SelectModeView.swift
 //  mednais Watch App
 //
 //  Created by VAITSIKHOUSKAYA on 05/02/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SelectModeView: View {
     @State private var showPreSampling: Bool = false
     
     var body: some View {
@@ -59,6 +59,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SelectModeView()
     }
 }

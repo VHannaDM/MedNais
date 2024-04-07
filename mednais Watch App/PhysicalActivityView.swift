@@ -21,7 +21,7 @@ struct PhysicalActivityView: View {
             }
         }
         .navigationDestination(isPresented: $showObtainSupplies) {
-            ObtainSupplies()
+            ObtainSuppliesView()
         }
     }
     

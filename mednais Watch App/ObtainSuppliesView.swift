@@ -1,5 +1,5 @@
 //
-//  ObtainSupplies.swift
+//  ObtainSuppliesView.swift
 //  mednais Watch App
 //
 //  Created by VAITSIKHOUSKAYA on 22/03/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ObtainSupplies: View {
+struct ObtainSuppliesView: View {
     @State private var showPuncture: Bool = false
     
     var body: some View {
@@ -69,6 +69,6 @@ struct ObtainSupplies: View {
 
 struct ObtainSupplies_Previews: PreviewProvider {
     static var previews: some View {
-        ObtainSupplies()
+        ObtainSuppliesView()
     }
 }
