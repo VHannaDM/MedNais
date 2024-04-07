@@ -24,6 +24,7 @@
 		C6CD76452BADABD00011C01D /* ObtainSuppliesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CD76442BADABD00011C01D /* ObtainSuppliesView.swift */; };
 		C6EEEDF52BB0A8D700EBD59A /* PunctureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */; };
 		C6EEEDF72BB0AE6100EBD59A /* TourniquetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */; };
+		C6EF15CD2BC325BB00F9B12F /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF15CC2BC325BB00F9B12F /* Mode.swift */; };
 		C6FBD9242BB9DA1500BD73E5 /* FinishingPunctureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBD9232BB9DA1500BD73E5 /* FinishingPunctureView.swift */; };
 		C6FBD9262BB9DEDD00BD73E5 /* PostSamplingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBD9252BB9DEDD00BD73E5 /* PostSamplingView.swift */; };
 		C6FBD9282BBAB7F500BD73E5 /* ParametersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBD9272BBAB7F500BD73E5 /* ParametersView.swift */; };
@@ -73,6 +74,7 @@
 		C6CD76442BADABD00011C01D /* ObtainSuppliesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainSuppliesView.swift; sourceTree = "<group>"; };
 		C6EEEDF42BB0A8D700EBD59A /* PunctureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureView.swift; sourceTree = "<group>"; };
 		C6EEEDF62BB0AE6100EBD59A /* TourniquetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourniquetView.swift; sourceTree = "<group>"; };
+		C6EF15CC2BC325BB00F9B12F /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		C6FBD9232BB9DA1500BD73E5 /* FinishingPunctureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishingPunctureView.swift; sourceTree = "<group>"; };
 		C6FBD9252BB9DEDD00BD73E5 /* PostSamplingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSamplingView.swift; sourceTree = "<group>"; };
 		C6FBD9272BBAB7F500BD73E5 /* ParametersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				C657A1962B7149C4002FEED2 /* mednaisApp.swift */,
 				C657A1982B7149C4002FEED2 /* SelectModeView.swift */,
+				C6EF15CC2BC325BB00F9B12F /* Mode.swift */,
 				C636A7172B74212E008FDB3A /* PreSamplingView.swift */,
 				C636A7192B7429A9008FDB3A /* PatientIDView.swift */,
 				C636A71B2B7429D4008FDB3A /* FastingView.swift */,
@@ -287,6 +290,7 @@
 				C657A1992B7149C4002FEED2 /* SelectModeView.swift in Sources */,
 				C636A71E2B742A44008FDB3A /* AlcoholFreeView.swift in Sources */,
 				C6FBD9262BB9DEDD00BD73E5 /* PostSamplingView.swift in Sources */,
+				C6EF15CD2BC325BB00F9B12F /* Mode.swift in Sources */,
 				C657A1972B7149C4002FEED2 /* mednaisApp.swift in Sources */,
 				C636A71A2B7429A9008FDB3A /* PatientIDView.swift in Sources */,
 				C6FBD92A2BBB27F100BD73E5 /* ExplicationView.swift in Sources */,

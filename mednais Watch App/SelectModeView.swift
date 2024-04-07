@@ -8,52 +8,30 @@
 import SwiftUI
 
 struct SelectModeView: View {
-    @State private var showPreSampling: Bool = false
+    @State private var showMode: Mode? = nil
+    
+    @State private var modes: [Mode] = [Mode(title: "Venous blood"), Mode(title: "Capillary Blood"), Mode(title: "Arterial Blood Gases"), Mode(title: "Urinalysis"), Mode(title: "Transportation")]
     
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 12) {
-                    titleView
-                    iconView
-                    modeView
-                    startButton
+                VStack {
+                    ForEach(modes.indices, id: \.self) { index in
+                        NavigationLink(value: modes[index]) {
+                            Text(modes[index].title)
+                        }
+                    }
                 }
             }
-            .navigationDestination(isPresented: $showPreSampling) {
-                PreSamplingView()
+            .navigationTitle("Select Mode")
+            .navigationDestination(for: Mode.self) { mode in
+                if mode.title == "Venous blood" {
+                    PreSamplingView()
+                } else {
+                    Text("hello")
+                }
             }
         }
-    }
-    
-    var titleView: some View {
-        Text("SELECT MODE")
-            .bold()
-    }
-    
-    var iconView: some View {
-        ZStack {
-            Circle()
-                .frame(width: 75, height: 75)
-            Text("TUBES")
-                .foregroundColor(.black)
-        }
-    }
-    
-    var modeView: some View {
-        Text("FLEBOTOMIST\nMODE")
-            .bold()
-            .multilineTextAlignment(.center)
-    }
-    
-    var startButton: some View {
-        Button {
-            showPreSampling = true
-        } label: {
-            Text("START")
-        }
-        .background(Color.red)
-        .cornerRadius(10)
     }
 }
 
