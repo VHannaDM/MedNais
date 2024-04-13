@@ -7,18 +7,28 @@
 
 import SwiftUI
 
+class SelectModeViewodel: ObservableObject {
+    
+    var modes: [Mode] = [
+        Mode(title: "Venous blood"),
+        Mode(title: "Capillary Blood"),
+        Mode(title: "Arterial Blood Gases"),
+        Mode(title: "Urinalysis"),
+        Mode(title: "Transportation")
+    ]
+}
+
 struct SelectModeView: View {
     @State private var showMode: Mode? = nil
-    
-    @State private var modes: [Mode] = [Mode(title: "Venous blood"), Mode(title: "Capillary Blood"), Mode(title: "Arterial Blood Gases"), Mode(title: "Urinalysis"), Mode(title: "Transportation")]
+    @StateObject var viewModel = SelectModeViewodel()
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    ForEach(modes.indices, id: \.self) { index in
-                        NavigationLink(value: modes[index]) {
-                            Text(modes[index].title)
+                    ForEach(viewModel.modes.indices, id: \.self) { index in
+                        NavigationLink(value: viewModel.modes[index]) {
+                            Text(viewModel.modes[index].title)
                         }
                     }
                 }
