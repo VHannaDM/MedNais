@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FinishingPunctureView: View {
     @State private var showPostSampling: Bool = false
+    @StateObject var viewModel = VenusBloodViewModel()
     
     var body: some View {
         ScrollView {
@@ -39,6 +40,7 @@ struct FinishingPunctureView: View {
     var nextButton: some View {
         Button {
             showPostSampling = true
+            viewModel.finishingPunctureDate = Date()
         } label: {
             Text("NEXT")
         }

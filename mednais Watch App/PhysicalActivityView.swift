@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PhysicalActivityView: View {
     @State private var showObtainSupplies: Bool = false
+    @StateObject var viewModel = VenusBloodViewModel()
     
     var body: some View {
         ScrollView {
@@ -48,6 +49,7 @@ struct PhysicalActivityView: View {
     var confirmButton: some View {
         Button {
             showObtainSupplies = true
+            viewModel.confirmPhysicalActivity = true
         } label: {
             Text("Confirm")
         }
@@ -58,6 +60,7 @@ struct PhysicalActivityView: View {
     var rejectButton: some View {
         Button {
             showObtainSupplies = true
+            viewModel.rejectPhysicalActivity = false
         } label: {
             Text("Reject")
         }

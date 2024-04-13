@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FastingView: View {
     @State private var showAlcoholFree: Bool = false
+    @StateObject var viewModel = VenusBloodViewModel()
     
     var body: some View {
         ScrollView {
@@ -48,6 +49,7 @@ struct FastingView: View {
     var confirmButton: some View {
         Button {
             showAlcoholFree = true
+            viewModel.confirmFasting = true
         } label: {
             Text("Confirm")
         }
@@ -58,6 +60,7 @@ struct FastingView: View {
     var rejectButton: some View {
         Button {
             showAlcoholFree = true
+            viewModel.rejectFasting = false
         } label: {
             Text("Reject")
         }

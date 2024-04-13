@@ -12,6 +12,7 @@ struct TourniquetView: View {
     @State private var showFinishingPuncture: Bool = false
     @State private var timeRemaining = 60
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common)
+    @StateObject var viewModel = VenusBloodViewModel()
     
     @State private var cancellable: Cancellable?
     
@@ -61,6 +62,7 @@ struct TourniquetView: View {
     var nextButton: some View {
         Button {
             showFinishingPuncture = true
+            viewModel.tourniquetDate = Date()
         } label: {
             Text("NEXT")
         }
@@ -72,6 +74,7 @@ struct TourniquetView: View {
         Button {
             if cancellable == nil {
                 cancellable = timer.connect()
+                viewModel.timerDate = Date()
             } else {
                 cancellable?.cancel()
                 timer = Timer.publish(every: 1, on: .main, in: .common)

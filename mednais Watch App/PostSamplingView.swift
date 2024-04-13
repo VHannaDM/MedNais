@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PostSamplingView: View {
     @State private var showParameters: Bool = false
+    @StateObject var viewModel = VenusBloodViewModel()
     
     var body: some View {
         ScrollView {
@@ -43,6 +44,7 @@ struct PostSamplingView: View {
     var finishButton: some View {
         Button {
             showParameters = true
+            viewModel.postSamplingDate = Date()
         } label: {
             Text("FINISH")
         }

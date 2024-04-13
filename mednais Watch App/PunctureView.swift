@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PunctureView: View {
     @State private var showTourniquet: Bool = false
+    @StateObject var viewModel = VenusBloodViewModel()
     
     var body: some View {
         ScrollView{
@@ -38,6 +39,7 @@ struct PunctureView: View {
     var startButton: some View {
         Button {
             showTourniquet = true
+            viewModel.punctureDate = Date()
         } label: {
             Text("START")
         }

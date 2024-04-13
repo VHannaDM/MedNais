@@ -7,8 +7,24 @@
 
 import SwiftUI
 
+class VenusBloodViewModel: ObservableObject {
+    var preSamplingDate = Date()
+    var confirmFasting = Bool()
+    var rejectFasting = Bool()
+    var confirmAlcoholFree = Bool()
+    var rejectAlcoholFree = Bool()
+    var confirmPhysicalActivity = Bool()
+    var rejectPhysicalActivity = Bool()
+    var punctureDate = Date()
+    var tourniquetDate = Date()
+    var timerDate = Date()
+    var finishingPunctureDate = Date()
+    var postSamplingDate = Date()
+}
+
 struct PreSamplingView: View {
     @State private var showPatientID: Bool = false
+    @StateObject var viewModel = VenusBloodViewModel()
     
     var body: some View {
         ScrollView {
@@ -47,6 +63,7 @@ struct PreSamplingView: View {
     var nextButton: some View {
         Button {
             showPatientID = true
+            viewModel.preSamplingDate = Date()
         } label: {
             Text("NEXT")
         }
