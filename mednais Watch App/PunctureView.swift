@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PunctureView: View {
     @State private var showTourniquet: Bool = false
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView{
@@ -19,7 +19,7 @@ struct PunctureView: View {
                 startButton
             }
             .navigationDestination(isPresented: $showTourniquet) {
-                TourniquetView()
+                TourniquetView(viewModel: viewModel)
             }
         }
     }
@@ -50,6 +50,6 @@ struct PunctureView: View {
 
 struct PunctureView_Previews: PreviewProvider {
     static var previews: some View {
-        PunctureView()
+        PunctureView(viewModel: VenusBloodViewModel())
     }
 }

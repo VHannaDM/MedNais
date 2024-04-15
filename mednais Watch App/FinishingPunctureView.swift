@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FinishingPunctureView: View {
     @State private var showPostSampling: Bool = false
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -19,7 +19,7 @@ struct FinishingPunctureView: View {
                 nextButton
             }
             .navigationDestination(isPresented: $showPostSampling) {
-                PostSamplingView()
+                PostSamplingView(viewModel: viewModel)
             }
         }
     }
@@ -51,6 +51,6 @@ struct FinishingPunctureView: View {
 
 struct FinishingPunctureView_Previews: PreviewProvider {
     static var previews: some View {
-        FinishingPunctureView()
+        FinishingPunctureView(viewModel: VenusBloodViewModel())
     }
 }

@@ -12,7 +12,7 @@ struct TourniquetView: View {
     @State private var showFinishingPuncture: Bool = false
     @State private var timeRemaining = 60
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common)
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     @State private var cancellable: Cancellable?
     
@@ -29,7 +29,7 @@ struct TourniquetView: View {
                 nextButton
             }
             .navigationDestination(isPresented: $showFinishingPuncture) {
-                FinishingPunctureView()
+                FinishingPunctureView(viewModel: viewModel)
             }
         }
         .onReceive(timer) {_ in
@@ -95,6 +95,6 @@ struct TourniquetView: View {
 
 struct TourniquetView_Previews: PreviewProvider {
     static var previews: some View {
-        TourniquetView()
+        TourniquetView(viewModel: VenusBloodViewModel())
     }
 }

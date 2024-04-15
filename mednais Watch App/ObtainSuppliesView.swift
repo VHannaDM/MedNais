@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ObtainSuppliesView: View {
     @State private var showPuncture: Bool = false
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -19,7 +20,7 @@ struct ObtainSuppliesView: View {
                 confirmButton
             }
             .navigationDestination(isPresented: $showPuncture) {
-                PunctureView()
+                PunctureView(viewModel: viewModel)
             }
         }
     }
@@ -69,6 +70,6 @@ struct ObtainSuppliesView: View {
 
 struct ObtainSupplies_Previews: PreviewProvider {
     static var previews: some View {
-        ObtainSuppliesView()
+        ObtainSuppliesView(viewModel: VenusBloodViewModel())
     }
 }

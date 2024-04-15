@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhysicalActivityView: View {
     @State private var showObtainSupplies: Bool = false
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -22,7 +22,7 @@ struct PhysicalActivityView: View {
             }
         }
         .navigationDestination(isPresented: $showObtainSupplies) {
-            ObtainSuppliesView()
+            ObtainSuppliesView(viewModel: viewModel)
         }
     }
     
@@ -71,6 +71,6 @@ struct PhysicalActivityView: View {
 
 struct PhysicalActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        PhysicalActivityView()
+        PhysicalActivityView(viewModel: VenusBloodViewModel())
     }
 }

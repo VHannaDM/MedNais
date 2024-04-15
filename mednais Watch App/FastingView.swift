@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FastingView: View {
     @State private var showAlcoholFree: Bool = false
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -22,7 +22,7 @@ struct FastingView: View {
             }
         }
         .navigationDestination(isPresented: $showAlcoholFree) {
-            AlcoholFreeView()
+            AlcoholFreeView(viewModel: viewModel)
         }
     }
     
@@ -72,6 +72,6 @@ struct FastingView: View {
 
 struct FastingView_Previews: PreviewProvider {
     static var previews: some View {
-        FastingView()
+        FastingView(viewModel: VenusBloodViewModel())
     }
 }

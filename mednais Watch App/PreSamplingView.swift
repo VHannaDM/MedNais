@@ -8,18 +8,18 @@
 import SwiftUI
 
 class VenusBloodViewModel: ObservableObject {
-    var preSamplingDate = Date()
-    var confirmFasting = Bool()
-    var rejectFasting = Bool()
-    var confirmAlcoholFree = Bool()
-    var rejectAlcoholFree = Bool()
-    var confirmPhysicalActivity = Bool()
-    var rejectPhysicalActivity = Bool()
-    var punctureDate = Date()
-    var tourniquetDate = Date()
-    var timerDate = Date()
-    var finishingPunctureDate = Date()
-    var postSamplingDate = Date()
+    @Published var preSamplingDate = Date()
+    @Published var confirmFasting = Bool()
+    @Published var rejectFasting = Bool()
+    @Published var confirmAlcoholFree = Bool()
+    @Published var rejectAlcoholFree = Bool()
+    @Published var confirmPhysicalActivity = Bool()
+    @Published var rejectPhysicalActivity = Bool()
+    @Published var punctureDate = Date()
+    @Published var tourniquetDate = Date()
+    @Published var timerDate = Date()
+    @Published var finishingPunctureDate = Date()
+    @Published var postSamplingDate = Date()
 }
 
 struct PreSamplingView: View {
@@ -36,7 +36,7 @@ struct PreSamplingView: View {
             }
         }
         .navigationDestination(isPresented: $showPatientID) {
-            PatientIDView()
+            PatientIDView(viewModel: viewModel)
         }
     }
     

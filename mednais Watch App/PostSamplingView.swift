@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostSamplingView: View {
     @State private var showParameters: Bool = false
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -18,6 +18,9 @@ struct PostSamplingView: View {
                 iconView
                 instructionView
                 finishButton
+            }
+            .navigationDestination(isPresented: $showParameters) {
+                ParametersView(viewModel: viewModel)
             }
         }
     }
@@ -55,6 +58,6 @@ struct PostSamplingView: View {
 
 struct PostSamplingView_Previews: PreviewProvider {
     static var previews: some View {
-        PostSamplingView()
+        PostSamplingView(viewModel: VenusBloodViewModel())
     }
 }

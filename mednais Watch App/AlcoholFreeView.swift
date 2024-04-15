@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AlcoholFreeView: View {
     @State private var showPhysicalActivity: Bool = false
-    @StateObject var viewModel = VenusBloodViewModel()
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -22,7 +22,7 @@ struct AlcoholFreeView: View {
             }
         }
         .navigationDestination(isPresented: $showPhysicalActivity) {
-            PhysicalActivityView()
+            PhysicalActivityView(viewModel: viewModel)
         }
     }
     
@@ -71,6 +71,6 @@ struct AlcoholFreeView: View {
 
 struct AlcoholFreeView_Previews: PreviewProvider {
     static var previews: some View {
-        AlcoholFreeView()
+        AlcoholFreeView(viewModel: VenusBloodViewModel())
     }
 }

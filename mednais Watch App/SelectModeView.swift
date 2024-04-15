@@ -9,7 +9,7 @@ import SwiftUI
 
 class SelectModeViewodel: ObservableObject {
     
-    var modes: [Mode] = [
+   @Published var modes: [Mode] = [
         Mode(title: "Venous blood"),
         Mode(title: "Capillary Blood"),
         Mode(title: "Arterial Blood Gases"),

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PatientIDView: View {
     @State private var showFasting: Bool = false
+    @ObservedObject var viewModel: VenusBloodViewModel
     
     var body: some View {
         ScrollView {
@@ -20,7 +21,7 @@ struct PatientIDView: View {
             }
         }
         .navigationDestination(isPresented: $showFasting) {
-            FastingView()
+            FastingView(viewModel: viewModel)
         }
     }
     
@@ -55,6 +56,6 @@ struct PatientIDView: View {
 
 struct PatientIDView_Previews: PreviewProvider {
     static var previews: some View {
-        PatientIDView()
+        PatientIDView(viewModel: VenusBloodViewModel())
     }
 }
